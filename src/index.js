@@ -1,12 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
-import App from "./App";
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  rootElement
-);
+import {
+  StyledForm,
+  BinaryInputText,
+  Label,
+  Button,
+  DecimalTextField,
+  Field
+} from "./styles";
