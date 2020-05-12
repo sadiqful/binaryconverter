@@ -18,3 +18,19 @@ export const Label = styled.span`
   font-size: 18px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 `;
+
+export const BinaryTextInput = styled.input`
+  width: 50%;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #a3a3a3;
+  padding: 10px;
+  border-radius: 2px;
+  background: #e0f0f0;
+  outline: none;
+
+  &:focus {
+    border: 1px solid orange;
+  }
+`;
