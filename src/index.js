@@ -15,3 +15,14 @@ function App() {
   const [decimalText, setDecimalText] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 }
+
+const onFormSubmit = e => {
+  e.preventDefault();
+
+  if (binaryText.match(/^[0-1]+$/g) === null) {
+    setErrorMessage("Enter only 0s and 1s");
+    return;
+  }
+
+  setErrorMessage("");
+};
