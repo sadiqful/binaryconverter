@@ -40,3 +40,10 @@ const onFormSubmit = e => {
   );
   setDecimalText(" ");
 };
+
+return (
+  <> 
+  <hi>Binary to Decimal</hi>
+
+
+)
