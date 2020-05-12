@@ -46,3 +46,19 @@ export const DecimalTextInput = styled.input`
   background: #e0f0e0;
   outline: none;
 `;
+
+export const Button = styled.button`
+  width: 30%;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 2px;
+  font-size: 18px;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid orange;
+    color: orange;
+  }
+`;
