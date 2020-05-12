@@ -12,3 +12,9 @@ export const Field = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
+export const Label = styled.span`
+  margin: 100%;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+`;
