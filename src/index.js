@@ -42,27 +42,37 @@ const onFormSubmit = e => {
 };
 
 return (
-  <> 
-  <hi>Binary to Decimal</hi>
-  <StyledForm onSubmit={onFormSubmit} 
-  {errorMessage && <span style={{ color:'red' }}> {errorMessage} </span> }
-  </br>
+  <>
+    <hi>Binary to Decimal</hi>
 
-  <Field>
-    <label> Binary Input </label>
-      <div>
-        <BinaryTextInput
+    <StyledForm onSubmit={onFormSubmit}>
+      {errorMessage && <span style={{ color: "red" }}> {errorMessage} </span>}
+      <br />
+
+      <Field>
+        <label> Binary Input </label>
+        <div>
+          <BinaryTextInput
             autoComplete="off"
             type="text"
             name="binary"
             placeholder="Type only Os and 1s"
             value={binaryText}
-            onChange = { e => setBinaryText(e.target.value)}
-            />
-            <Button type="submit"> convert </Button>
-      </div>
-    </Field>
+            onChange={e => setBinaryText(e.target.value)}
+          />
+          <Button type="submit"> convert </Button>
+        </div>
+      </Field>
 
-
-
-)
+      <Field>
+        <label> Decimal Input </label>
+        <DecimalTextField
+          type="text"
+          name="decimal"
+          value={decimalText}
+          disabled
+        />
+      </Field>
+    </StyledForm>
+  </>
+);
