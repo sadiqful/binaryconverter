@@ -9,3 +9,9 @@ import {
   DecimalTextField,
   Field
 } from "./styles";
+
+function App() {
+  const [binaryText, setBinaryText] = useState("");
+  const [decimalText, setDecimalText] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+}
